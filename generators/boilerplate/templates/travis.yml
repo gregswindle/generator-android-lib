@@ -1,0 +1,51 @@
+language: android
+jdk:
+  - oraclejdk8
+env:
+  global:
+    - ANDROID_TARGET=android-25
+sudo: false
+android:
+  components:
+    - platform-tools
+    - tools
+    - build-tools-25.0.2
+    - android-25
+    - extra-android-m2repository
+    - sys-img-armeabi-v7a-android-25
+  licenses:
+    - 'android-sdk-preview-license-.+'
+    - 'android-sdk-license-.+'
+    - 'intel-android-extra-license.+'
+
+before_install:
+  - unset $ANDROID_NDK_HOME
+  - chmod +x gradlew
+
+install:
+    - npm install
+    - npm install -g codecov
+    - echo y | android update sdk -u --filter android-22,android-23,android-24,android-25
+
+script:
+  - ./gradlew check projectReport jacocoTestReport
+  - cat library/build/reports/project/dependencies.txt && cat library/build/reports/project/properties.txt && cat library/build/reports/project/tasks.txt
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+after_failure: "cat $TRAVIS_BUILD_DIR/build/outputs/lint-results-debug.xml"
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -rf $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    - $HOME/.m2/repository
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.android/build-cache
+    - $HOME/.sonar/cache
+    - $HOME/.gradle
+    - .gradle
