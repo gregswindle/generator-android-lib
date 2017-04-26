@@ -47,7 +47,7 @@ $ npm install --global generator-android-lib
 
 ## 3. Usage
 
-> :warning: **This template generates files in the current directory.**
+> :warning: **This template generates files in the current working directory.**
 >
 > Be sure to change to a new directory first if you don't want to overwrite existing files.
 
