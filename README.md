@@ -33,7 +33,7 @@
 * Ready for [spock](http://spockframework.org) tests ([documentation](http://docs.spockframework.org))
 * [Bintray](https://bintray.com/) publication (+ jars signing and maven central publishing)
 * [Travis-CI](https://travis-ci.org/) integration (CI and healthy badge)
-* [Coveralls](http://coveralls.io/) integration (code coverage badge)
+* [Codecov](https://codecov.io) integration (code coverage badge)
 * Target jdk compatibility check with [animal sniffer](http://mojo.codehaus.org/animal-sniffer/) (you may use newer jdk to build, and keep compatibility with older jdk)
 * Code quality checks ([checkstyle](http://checkstyle.sourceforge.net/), [pmd](http://pmd.sourceforge.net/), [findbugs](http://findbugs.sourceforge.net/))
 * [Release process](https://github.com/researchgate/gradle-release#introduction) (like maven release)
