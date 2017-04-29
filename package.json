@@ -47,7 +47,7 @@
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.5.1"
   },
-  "repository": "yeoman/generator-android-lib",
+  "repository": "gregswindle/generator-android-lib",
   "scripts": {
     "commitmsg": "commitplease",
     "precommit": "npm run commitmsg",
