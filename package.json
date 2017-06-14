@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "bithound": "^1.7.0",
-    "commitplease": "^2.7.9",
-    "coveralls": "^2.12.0",
+    "commitplease": "^2.7.10",
+    "coveralls": "^2.13.1",
     "eslint": "^3.18.0",
     "eslint-config-xo-space": "^0.16.0",
     "git-labelmaker": "^0.9.0",
