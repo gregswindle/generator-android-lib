@@ -1,8 +1,8 @@
 # `generator-android-lib`
+> ![Android Bot][android-bot-img] Scaffold an Android library (`.aar`) with boilerplate code including CLI tasks that build, test, and deploy with quality gates, CI-services, and dependency management.
+
 [![License][license-image]][license-url] [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage percentage][coveralls-image]][coveralls-url]<br>[![NSP Status][nsp-image]][nsp-url]
 [![Dependency Status][daviddm-image]][daviddm-url] [![Dependency Status][daviddm-dev-image]][daviddm-dev-url]
-
-> ![Android Bot][android-bot-img] Scaffold an Android library (`.aar`) with boilerplate code including CLI tasks that build, test, and deploy with quality gates, CI-services, and dependency management.
 
 ## Table of contents
 
