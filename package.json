@@ -37,7 +37,7 @@
         "commitplease": "^2.7.10",
         "coveralls": "^2.13.1",
         "eslint": "^4.1.1",
-        "eslint-config-xo-space": "^0.16.0",
+        "eslint-config-xo-space": "^0.17.0",
         "generator-travis": "^1.5.2",
         "git-labelmaker": "^0.9.0",
         "github-username": "^4.1.0",
